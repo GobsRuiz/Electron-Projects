@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/employee.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1>
+            Funcionários
+        </h1>
+
+        <button id="addEmployee">
+            Adicionar
+        </button>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- List employers -->
+        <section id="listEmployees">
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <!-- Register -->
+    <section id="modalRegister" class="modal">
+        <div class="modal-content">
+            <!-- Form -->
+            <form action="">
+                <input type="text" id="name" placeholder="Nome">
+                <input type="text" id="cpf" placeholder="CPF">
+
+                <button id="register">
+                    Registrar    
+                </button>
+            </form>
+
+            <!-- Message -->
+            <span id="modalRegister-message" class="modal-message"></span>
+        </div>
+    </section>
+    <!-- Edit -->
+    <section id="modalEdit" class="modal">
+        <div class="modal-content">
+            <h2 id="modalEdit-title">
+                Editar usuário: 
+            </h2>
+
+            <!-- Form -->
+            <form action="">
+                <input type="text" id="editName" placeholder="Nome">
+                <input type="text" id="editCpf" placeholder="CPF">
+
+                <button id="modalEdit-btnSave">
+                    Registrar    
+                </button>
+            </form>
+
+            <!-- Message -->
+            <span id="modalEdit-message" class="modal-message"></span>
+        </div>
+    </section>
+    <!-- Detail -->
+    <section id="modalDetails" class="modal">
+        <div class="modal-content">
+            <h2 id="modalDetails-title">
+                Detalhes do usuário: 
+            </h2>
+
+            <div id="modalDetails-data">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Script -->
+    <!-- Modal -->
+    <script src="../js/modal.js"></script>
+    <!-- Banco -->
+    <script src="../js/banco.js"></script>
+    <!-- List employees -->
+    <script src="../js/list.js"></script>
+    <!-- Register -->
+    <script src="../js/register.js"></script>
+    <!-- Details -->
+    <script src="../js/details.js"></script>
+    <!-- Update || Edit -->
+    <script src="../js/update.js"></script>
+    <!-- Delete -->
+    <script src="../js/delete.js"></script>
+</body>
+</html>
